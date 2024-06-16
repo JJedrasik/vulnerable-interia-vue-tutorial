@@ -28,8 +28,15 @@ watch(
 );
 
 const getSections = (class_id) => {
-    axios.get("/api/sections?class_id=" + class_id).then((response) => {
+    axios.get("/api/sections", {
+        params: { class_id },
+        headers: {
+            'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
+        }
+    }).then((response) => {
         sections.value = response.data;
+    }).catch((error) => {
+        console.error('Error fetching sections:', error);
     });
 };
 
