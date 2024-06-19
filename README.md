@@ -18,4 +18,4 @@ With both `artisan serve` running, and `npm`, we're off to the races. You can go
 This application is fairly straight forward - it tracks students. You can add students and assign them into classes and sections, as well as edit and delete them. There's also a search function. It's built on Breeze, so if you've seen the UI, you know the basic scaffolding of dashboard/user profile comes out of the box. 
 
 # Security Findings
-Initial findings and improvements - i.e. what I've found in this application thats questionable and how I would fix it (if anything). You can find this [here] (https://github.com/JJedrasik/vulnerable-interia-vue-tutorial/blob/master/Security%20Review/Secreview.pdf)
+Initial findings and improvements - i.e. what I've found in this application thats questionable and how I would fix it (if anything). You can find this [here](https://github.com/JJedrasik/vulnerable-interia-vue-tutorial/blob/master/Security%20Review/Secreview.pdf)
